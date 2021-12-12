@@ -44,7 +44,6 @@ public class Board {
                 }
             }
         }
-        System.out.println("Looks like this game was a scratch!");
         return true;
     }
 
@@ -60,67 +59,28 @@ public class Board {
     // if no winner, return false
     public boolean did_win() {
         if (played_spaces[0][0] == played_spaces[0][1] && played_spaces[0][2] == played_spaces[0][1] && played_spaces[0][1] != '+') {
-            if (played_spaces[0][0] == 'C') {
-                System.out.println("The computer won this time!");
-            } else {
-                System.out.println("You won this time!");
-            }
             return true;
         }
         if (played_spaces[1][0] == played_spaces[1][1] && played_spaces[1][2] == played_spaces[1][1] && played_spaces[1][1] != '+') {
-            if (played_spaces[1][0] == 'C') {
-                System.out.println("The computer won this time!");
-            } else {
-                System.out.println("You won this time!");
-            }
             return true;
         }
         if (played_spaces[2][0] == played_spaces[2][1] && played_spaces[2][2] == played_spaces[2][1] && played_spaces[2][1] != '+') {
-            if (played_spaces[2][0] == 'C') {
-                System.out.println("The computer won this time!");
-            } else {
-                System.out.println("You won this time!");
-            }
+
             return true;
         }
         if (played_spaces[0][0] == played_spaces[1][0] && played_spaces[2][0] == played_spaces[1][0] && played_spaces[0][0] != '+') {
-            if (played_spaces[0][0] == 'C') {
-                System.out.println("The computer won this time!");
-            } else {
-                System.out.println("You won this time!");
-            }
             return true;
         }
         if (played_spaces[0][1] == played_spaces[1][1] && played_spaces[2][1] == played_spaces[0][1] && played_spaces[0][1] != '+') {
-            if (played_spaces[0][1] == 'C') {
-                System.out.println("The computer won this time!");
-            } else {
-                System.out.println("You won this time!");
-            }
             return true;
         }
         if (played_spaces[0][2] == played_spaces[1][2] && played_spaces[2][2] == played_spaces[1][2] && played_spaces[0][2] != '+') {
-            if (played_spaces[0][2] == 'C') {
-                System.out.println("The computer won this time!");
-            } else {
-                System.out.println("You won this time!");
-            }
             return true;
         }
         if (played_spaces[0][0] == played_spaces[1][1] && played_spaces[2][2] == played_spaces[1][1] && played_spaces[1][1] != '+') {
-            if (played_spaces[0][0] == 'C') {
-                System.out.println("The computer won this time!");
-            } else {
-                System.out.println("You won this time!");
-            }
             return true;
         }
         if (played_spaces[0][2] == played_spaces[1][1] && played_spaces[2][0] == played_spaces[1][1] && played_spaces[1][1] != '+') {
-            if (played_spaces[0][2] == 'C') {
-                System.out.println("The computer won this time!");
-            } else {
-                System.out.println("You won this time!");
-            }
             return true;
         } else {
             return false;

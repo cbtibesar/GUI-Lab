@@ -25,6 +25,4 @@ abstract class Player {
 
     abstract public char getPlayerType();
 
-    abstract public void getMove(Board board);
-
 }

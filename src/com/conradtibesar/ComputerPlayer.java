@@ -51,7 +51,7 @@ public class ComputerPlayer extends Player {
     // this method allows the ComputerPlayer to make a smart move (offensive or defensive)
     // since making an offensive or defensive move is the same, varying only by the character, the function takes a character
     // as a parameter (C for offense, H for defense)
-    public boolean decideMove(Board board, char playerType) {
+    private boolean decideMove(Board board, char playerType) {
         char[][] played_spaces = board.getPlayed_spaces();
         // Check if there is a winning/losing move in the three rows, if there is, set the play accordingly, and return true
         for (int x = 0; x < 3; x++) {
